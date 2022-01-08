@@ -60,7 +60,7 @@ Comment.objects.get(pk=3).like()
 Author.objects.get(authorUser=User.objects.get(username=‘Oleg’)).update_rating()
 Author.objects.get(authorUser=User.objects.get(username=‘Ivan’)).update_rating()
 
-#9.Ввыводим username и рейтинг лучшего пользователя:
+#9.Выводим username и рейтинг лучшего пользователя:
 a = Author.objects.get(authorUser=User.objects.get(username=‘Ivan’))
 a.ratingAuthor
 Author.objects.get(authorUser=User.objects.get(username=‘Oleg’)).ratingAuthor
